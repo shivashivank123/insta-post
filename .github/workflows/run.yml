@@ -1,7 +1,7 @@
 name: run
 on:
   schedule:
-    - cron: '*/10 * * * *'  # post: each channel's post_next.py decides if its slot is open
+    - cron: '5,20 1-18 * * *'  # post: :35 and :50 IST, 06–23 IST; each channel's post_next.py decides if its slot is open
     - cron: '0 22 * * 0'    # refresh tokens weekly (Sunday 22:00 UTC)
   workflow_dispatch:
     inputs:
